@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block Tut</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- <img class="header-curve" src="./assets/curve1.png" alt=""> -->
+    <nav class="navbar navbar-expand-lg navbar-light container">
+        <a class="navbar-brand" href="#home">
+            <img class="logo-img" src="./assets/logo.webp" alt="" />
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#courses">Quizes</a>
+                </li>
+                <div class="nav-login">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                </div>
+            </ul>
+            </form>
+        </div>
+    </nav>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide container" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="carousel-img" src="./assets/slide1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-img" src="./assets/slide2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-img" src="./assets/slide4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+    </div>
+
+    <!-- <img class="curve" src="./assets/curve5.png" alt=""> -->
+
+    <section class="about container">
+        <h2 id="about">About</h2>
+        <p>
+            Welcome to our blockchain website! We are a team of dedicated professionals who are passionate about the
+            transformative power of blockchain technology. Our goal is to provide our visitors with accurate, reliable
+            information about blockchain, as well as to offer various blockchain-related services.
+        </p>
+
+        <p>
+            Blockchain is a decentralized, digital ledger that provides a secure, transparent way to record
+            transactions. It has the potential to revolutionize many industries, from finance to healthcare to supply
+            chain management. Our website is designed to help you understand blockchain technology and its many
+            applications, as well as to provide you with the tools you need to take advantage of its benefits.
+            We offer a range of services to help businesses and individuals leverage the power of blockchain. These
+            include blockchain consulting, blockchain development, and blockchain training. Our team of experts has
+            years of experience in the blockchain industry and can help you navigate the complex world of blockchain
+            with confidence.
+        </p>
+        <p>
+            We are committed to providing our visitors with the latest news and insights about blockchain technology.
+            Our blog features articles written by experts in the field, covering topics ranging from blockchain basics
+            to advanced applications. We also host webinars and events to help educate the public about blockchain and
+            its potential.
+        </p>
+        <p>
+            Thank you for visiting our blockchain website. We hope you find our content informative and useful. If you
+            have any questions or comments, please feel free to reach out to us. We are always happy to hear from our
+            visitors and are dedicated to providing the best possible experience on our website</p>
+    </section>
+
+    <!-- <img class="curve" src="./assets/curve4.png" alt=""> -->
+
+    <h2 id="courses" class="container">Quizes</h2>
+    <div class="cards container">
+        <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="./assets/slide1.jpg" alt="Card image cap" />
+            <div class="card-body">
+                <h5 class="card-title">Block CHain</h5>
+                <p class="card-text">
+                    Blockchain is a shared, immutable ledger that facilitates the
+                    process of recording transactions and tracking assets in a business
+                    network.
+                </p>
+                <a href="./quiz.html" class="btn " name="blockchain" onclick="handleClick">Go to quiz</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="./assets/slide2.jpg" alt="Card image cap" />
+            <div class="card-body">
+                <h5 class="card-title">Web 3</h5>
+                <p class="card-text">
+                    Web 3.0, sometimes known as Web 3, is the concept of the next
+                    generation of the web, in which most users will be connected via a
+                    decentralized network and have access to their own data.
+                </p>
+                <a href="./quiz.html" class="btn" name="web3" onclick="handleClick">Go to quiz</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="./assets/slide3.jpg" alt="Card image cap" />
+            <div class="card-body">
+                <h5 class="card-title">NFTs</h5>
+                <p class="card-text">
+                    NFTs' unique data makes it easy to verify and validate their
+                    ownership and the transfer of tokens between owners.
+                </p>
+                <a href="./quiz.html" class="btn " name="nfts" onclick="handleClick">Go to quiz</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="./assets/slide4.jpg" alt="Card image cap" />
+            <div class="card-body">
+                <h5 class="card-title">AI</h5>
+                <p class="card-text">
+                    Artificial Intelligence is a system that enables a machine to think
+                    and act like a human.
+                </p>
+                <a href="./quiz.html" class="btn " name="ai" onclick="handleClick">Go to quiz</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <img class="footer-curve" src="./assets/curve2.png" alt=""> -->
+    <footer class="text-center text-white">
+        <div class="container p-2 pb-0">
+            <section class="mb-4">
+                <a class="btn text-white btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i><img
+                        class="footer-logo" src="./assets/facebook.svg" alt="" srcset="" /></a>
+
+                <a class="btn text-white btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i><img
+                        class="footer-logo" src="./assets/twitter.svg" alt="" srcset="" /></a>
+
+                <a class="btn text-white btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i><img
+                        class="footer-logo" src="./assets/instagram.svg" alt="" srcset="" /></a>
+            </section>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023 Copyright:
+            <a class="text-white" href="#">Block Learns</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
