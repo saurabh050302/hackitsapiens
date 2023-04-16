@@ -453,7 +453,7 @@ function checkForAnswer() {
 
   options.forEach((option) => {
     if (option.checked === true && option.value === currentQuestionAnswer) {
-      document.getElementById(correctOption).style.backgroundColor = "green";
+      document.getElementById(correctOption).style.backgroundColor = "#7FFFD4";
       playerScore++;
       indexNum++;
       setTimeout(() => {
@@ -461,8 +461,8 @@ function checkForAnswer() {
       }, 1000);
     } else if (option.checked && option.value !== currentQuestionAnswer) {
       const wrongLabelId = option.labels[0].id;
-      document.getElementById(wrongLabelId).style.backgroundColor = "red";
-      document.getElementById(correctOption).style.backgroundColor = "green";
+      document.getElementById(wrongLabelId).style.backgroundColor = "#AA4A44";
+      document.getElementById(correctOption).style.backgroundColor = "#7FFFD4";
       wrongAttempt++;
       indexNum++;
       setTimeout(() => {
@@ -497,18 +497,4 @@ function unCheckRadioButtons() {
   for (let i = 0; i < options.length; i++) {
     options[i].checked = false;
   }
-}
-
-function closeScoreModal() {
-  quesNum = 1;
-  playerScore = 0;
-  wrongAttempt = 0;
-  indexNum = 0;
-  shuffledQuestions = [];
-  NextQuestion(indexNum);
-  document.getElementById("score-modal").style.display = "none";
-}
-
-function closeOptionModal() {
-  document.getElementById("option-modal").style.display = "none";
 }
